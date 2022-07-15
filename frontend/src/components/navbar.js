@@ -50,7 +50,7 @@ function Navbar() {
 
                 <div>
                     <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>    <h2>ClockiFood</h2> </div>
-                    <div className='navlink' onClick={() => history.push("/loginasrestaurant")}>     <div style={({ display: 'flex', marginTop: '-30px', alignItems: 'center', marginLeft: '30px' })}>
+                    <div className='navlink' onClick={() => history.push("/Registerrestuarant")}>     <div style={({ display: 'flex', marginTop: '-30px', alignItems: 'center', marginLeft: '30px' })}>
                         <h5>I am restaurant</h5> </div> </div>
                     <hr></hr>
                 </div>
@@ -89,7 +89,7 @@ function Navbar() {
         <div className='nav'>
             <div className='left'>
                 <div className='menu' onClick={() => setactive(true)}> <div></div></div>
-                <div className='logo' ><h1>LOGO</h1></div>
+                <div className='logo' ><h1 style={({cursor: "pointer"})} onClick={() => history.push("/")}>ClockiFood(logo)</h1></div>
             </div>
             <div className='right'>
                 <div className='rightside'>

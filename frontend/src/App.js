@@ -10,6 +10,7 @@ import Registerrest from './pages/Registerrest';
 import Aboutus from './pages/Aboutus';
 import FAQs from './pages/FAQs';
 import contactus from './pages/contactus';
+import loginasrestuarant from './pages/loginasres';
 
 
 function App() {
@@ -22,10 +23,11 @@ function App() {
 
       <Route path="/" exact component={index} />
       <Route path="/login" exact component={signin} />
-      <Route path="/Registerrestuarant" exact component={Registerrest} />
+      <Route path="/registerrestuarant" exact component={Registerrest} />
       <Route path="/aboutus" exact component={Aboutus} />
       <Route path="/FAQs" exact component={FAQs} />
       <Route path="/contactus" exact component={contactus} />
+      <Route path="/loginasrestuarant" exact component={loginasrestuarant} />
       
      
       </Switch>
