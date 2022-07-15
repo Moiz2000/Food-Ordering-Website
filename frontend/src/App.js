@@ -10,6 +10,7 @@ import Registerrest from './pages/Registerrest';
 import Aboutus from './pages/Aboutus';
 import FAQs from './pages/FAQs';
 import contactus from './pages/contactus';
+import Admin from "./pages/Admin"
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       <Route path="/aboutus" exact component={Aboutus} />
       <Route path="/FAQs" exact component={FAQs} />
       <Route path="/contactus" exact component={contactus} />
-      
+      <Route path="/admin" exact component={Admin} />
+     
      
       </Switch>
 
