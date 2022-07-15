@@ -1,0 +1,80 @@
+.app{
+    width: 100%;
+    /* background-color: aqua; */
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.app h1{
+   font-size: 50px;
+}
+
+.search{
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-bottom: 50px;
+
+}
+
+.searchbar{
+    /* background-color: yellowgreen; */
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.searchinput{
+    width: 79%;
+    height: 40px;
+    box-shadow: 0 0 1px 1px;
+}
+
+.searbtn{
+    height: 46px;
+    width: 105px;
+    box-shadow: 0 0 1px 1px;
+}
+
+.POPULARCUISINES{
+    /* background-color: aquamarine; */
+    width: 90%;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.items{
+    /* background-color: blueviolet; */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.app2{
+    width: 65%;
+    /* background-color: aqua; */
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    
+}
