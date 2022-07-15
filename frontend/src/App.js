@@ -10,12 +10,10 @@ import Registerrest from './pages/Registerrest';
 import Aboutus from './pages/Aboutus';
 import FAQs from './pages/FAQs';
 import contactus from './pages/contactus';
-<<<<<<< HEAD
-import Admin from "./pages/Admin"
-=======
-import loginasrestuarant from './pages/loginasres';
->>>>>>> 75497d88140ad1a17eb3da37b6908bbe46769779
 
+import Admin from "./pages/Admin"
+
+import loginasrestuarant from './pages/loginasres';
 
 function App() {
   return (
@@ -31,14 +29,12 @@ function App() {
       <Route path="/aboutus" exact component={Aboutus} />
       <Route path="/FAQs" exact component={FAQs} />
       <Route path="/contactus" exact component={contactus} />
-<<<<<<< HEAD
+
       <Route path="/admin" exact component={Admin} />
      
-=======
+
       <Route path="/loginasrestuarant" exact component={loginasrestuarant} />
-      
->>>>>>> 75497d88140ad1a17eb3da37b6908bbe46769779
-     
+    
       </Switch>
 
 
