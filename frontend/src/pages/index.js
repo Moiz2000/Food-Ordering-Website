@@ -31,7 +31,7 @@ function index() {
       <div className='search'>
 
 
-      <img src={image1} width="300px" height="300px" alt='img'/>
+      <img src={image1} style={({border: "none" ,animation: "rotate 60s linear 0s infinite normal"})} width="300px" height="300px" alt='img'/>
      <form className='searchbar'><input required="true" placeholder='search by your Area' className='searchinput' /><button className='searbtn'>Search</button> </form>
      <img src={image2} width="300px" height="300px" alt='img'/>
 
