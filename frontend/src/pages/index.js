@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/navbar'
 import "../css/index.css"
-import { Link } from 'react-router-dom';
+import { Link , useHistory  } from 'react-router-dom';
 import image1 from "../images/a.png"
 import image2 from "../images/2.jpeg"
 import image3 from "../images/3.jpeg"
@@ -22,7 +22,8 @@ import j from "../images/items/j.jpeg"
 // import image2 from "../images/2.jpeg"
 // import image3 from "../images/3.jpeg"
 
-function index() {
+function Index() {
+  const history = useHistory();
   return (<>
     <Navbar />
     <div className='app'>
@@ -48,11 +49,11 @@ function index() {
 
       <div className='POPULARCUISINES'>
 
-        <div className='items'><h2>Dricks</h2> <img src={a} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>Appetizers</h2> <img src={b} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>Sandwich</h2> <img src={c} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>Pizza</h2> <img src={d} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>Fast Food</h2> <img src={e} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Dricks</h2> <img src={a} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Appetizers</h2> <img src={b} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Sandwich</h2> <img src={c} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Pizza</h2> <img src={d} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Fast Food</h2> <img src={e} alt='aa' width="200px" height="160px" /></div>
 
 
 
@@ -61,11 +62,11 @@ function index() {
 
       <div className='POPULARCUISINES'>
 
-        <div className='items'><h2>Salads</h2> <img img src={f} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>Dessert</h2> <img img src={g} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>BBQ</h2> <img img src={h} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>Pakistani</h2> <img img src={i} alt='aa' width="200px" height="160px" /></div>
-        <div className='items'><h2>Italian</h2> <img img src={j} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Salads</h2> <img img src={f} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Dessert</h2> <img img src={g} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>BBQ</h2> <img img src={h} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Pakistani</h2> <img img src={i} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Italian</h2> <img img src={j} alt='aa' width="200px" height="160px" /></div>
 
 
 
@@ -90,4 +91,4 @@ function index() {
   </>)
 }
 
-export default index
+export default Index

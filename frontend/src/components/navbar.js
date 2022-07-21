@@ -6,6 +6,7 @@ import Icon, { ShoppingCartOutlined } from '@ant-design/icons';
 
 function Navbar() {
     const [active, setactive] = useState(false)
+    const [active2, setactive2] = useState(false)
     const history = useHistory();
     return (<>
 
@@ -57,20 +58,134 @@ function Navbar() {
                     <hr></hr>
                 </div>
                 <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>    <h2>Need help</h2> </div>
-             
-                <div className='navlink' onClick={() => history.push("/FAQs")}>  
-                <div style={({ display: 'flex', marginTop: '-10px', alignItems: 'center', marginLeft: '30px' })}>
-                    <h5>FAQs</h5> </div> </div>
 
-                    <div className='navlink' onClick={() => history.push("/contactus")}>  
-                <div style={({ display: 'flex', marginTop: '-10px', alignItems: 'center', marginLeft: '30px' })}>
-                    <h5>Contact Us</h5> </div></div>
+                <div className='navlink' onClick={() => history.push("/FAQs")}>
+                    <div style={({ display: 'flex', marginTop: '-10px', alignItems: 'center', marginLeft: '30px' })}>
+                        <h5>FAQs</h5> </div> </div>
+
+                <div className='navlink' onClick={() => history.push("/contactus")}>
+                    <div style={({ display: 'flex', marginTop: '-5px', alignItems: 'center', marginLeft: '30px' })}>
+                        <h5>Contact Us</h5> </div></div>
 
 
 
             </div>
 
             <div className='bg' onClick={() => setactive(false)}></div>
+
+        </>}
+
+
+        {active2 === true && <>
+            <div className='popup'>
+                <div style={({ width: '100%', display: 'flex', justifyContent: 'center' })}>
+                    <h1>ClockiFoocx vjld</h1>
+
+                </div>
+
+                <div style={({ display: 'flex', alignItems: 'center', width: '100%', height: "150px", backgroundColor: "#999" })}>sdfgv</div>
+
+                <div><hr></hr>
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>
+                        <div className='navlink' onClick={() => history.push("/")}>
+                            <div style={({ width: '30px', height: '30px', backgroundColor: '#000', marginRight: '10px' })}>
+                            </div>
+                            <h3>Home</h3>
+                        </div>
+                    </div>
+
+
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>
+                        <div className='navlink' onClick={() => history.push("/login")}>
+                            <div style={({ width: '30px', height: '30px', backgroundColor: '#000', marginRight: '10px' })}>
+                            </div>
+                            <h3>Cashback Wallet</h3>
+                        </div>
+                    </div>
+
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>
+                        <div className='navlink' onClick={() => history.push("/login")}>
+                            <div style={({ width: '30px', height: '30px', backgroundColor: '#000', marginRight: '10px' })}>
+                            </div>
+                            <h3>My Orders</h3>
+                        </div>
+                    </div>
+
+
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>
+                        <div className='navlink' onClick={() => history.push("/login")}>
+                            <div style={({ width: '30px', height: '30px', backgroundColor: '#000', marginRight: '10px' })}>
+                            </div>
+                            <h3>Profile</h3>
+                        </div>
+                    </div>
+
+
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>
+                        <div className='navlink' onClick={() => history.push("/login")}>
+                            <div style={({ width: '30px', height: '30px', backgroundColor: '#000', marginRight: '10px' })}>
+                            </div>
+                            <h3>Payment Methods</h3>
+                        </div>
+                    </div>
+
+
+
+                    <hr></hr>
+                </div>
+
+
+
+
+                <div>
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>
+                        <div className='navlink' onClick={() => history.push("/")}>
+                            <div style={({ width: '30px', height: '30px', backgroundColor: '#000', marginRight: '10px' })}>
+                            </div>
+                            <h3>Help?</h3>
+                        </div>
+                    </div>
+
+
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>
+                        <div className='navlink' onClick={() => history.push("/login")}>
+                            <div style={({ width: '30px', height: '30px', backgroundColor: '#000', marginRight: '10px' })}>
+                            </div>
+                            <h3>Log Out</h3>
+                        </div>
+                    </div>
+
+                   
+
+
+                    <hr></hr>
+                </div>
+
+
+
+
+
+                <div>
+                    <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>    <h2>ClockiFood</h2> </div>
+                    <div className='navlink' onClick={() => history.push("/Registerrestuarant")}>     <div style={({ display: 'flex', marginTop: '-10px', alignItems: 'center', marginLeft: '30px' })}>
+                        <h5>I am restaurant</h5> </div> </div>
+                    <hr></hr>
+                </div>
+                <div style={({ display: 'flex', alignItems: 'center', marginLeft: '30px' })}>    <h2>Need help</h2> </div>
+
+                <div className='navlink' onClick={() => history.push("/FAQs")}>
+                    <div style={({ display: 'flex', marginTop: '-10px', alignItems: 'center', marginLeft: '30px' })}>
+                        <h5>FAQs</h5> </div> </div>
+
+                <div className='navlink' onClick={() => history.push("/contactus")}>
+                    <div style={({ display: 'flex', marginTop: '-5px', alignItems: 'center', marginLeft: '30px' })}>
+                        <h5>Contact Us</h5> </div></div>
+
+
+
+            </div>
+
+            <div className='bg' onClick={() => setactive2(false)}></div>
 
         </>}
 
@@ -87,11 +202,11 @@ function Navbar() {
 
 
 
-
         <div className='nav'>
             <div className='left'>
-                <div className='menu' onClick={() => setactive(true)}> <div></div></div>
-                <div className='logo' ><h1 style={({cursor: "pointer"})} onClick={() => history.push("/")}>ClockiFood(logo)</h1></div>
+                {/* <div className='menu' onClick={() => setactive(true)}> <div></div></div> */}
+                <div className='menu' onClick={() => setactive2(true)}> <div></div></div>
+                <div className='logo' ><h1 style={({ cursor: "pointer" })} onClick={() => history.push("/")}>ClockiFood(logo)</h1></div>
             </div>
             <div className='right'>
                 <div className='rightside'>
@@ -99,7 +214,7 @@ function Navbar() {
                     <h5 onClick={() => history.push("/aboutus")}>About Us</h5>
                     <h5 onClick={() => history.push("/login")}>log in</h5>
                     <div className='btn'>register</div>
-                    <Icon  component={ShoppingCartOutlined}  className='cart'/>
+                    <Icon component={ShoppingCartOutlined} className='cart' />
                 </div>
 
             </div></div>

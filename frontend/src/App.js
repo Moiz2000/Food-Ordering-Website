@@ -11,6 +11,7 @@ import Registerrest from './pages/Registerrest';
 import Aboutus from './pages/Aboutus';
 import FAQs from './pages/FAQs';
 import contactus from './pages/contactus';
+import Ress from './pages/Res';
 
 import Admin from "./pages/Admin"
 
@@ -23,14 +24,14 @@ function App() {
 
     <><Router>
       <Switch>
-
+   
       <Route path="/" exact component={index} />
+      <Route path="/restuarants" exact component={Ress} />
       <Route path="/login" exact component={signin} />
       <Route path="/registerrestuarant" exact component={Registerrest} />
       <Route path="/aboutus" exact component={Aboutus} />
       <Route path="/FAQs" exact component={FAQs} />
       <Route path="/contactus" exact component={contactus} />
-
       <Route path="/admin" exact component={Admin} />
      
 
