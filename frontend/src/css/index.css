@@ -132,3 +132,192 @@ border-bottom-right-radius: 20px;
 .app h1 {
     color:orangered;
 }
+.first{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 550px;
+  }
+  .card1{
+    cursor: pointer;
+    width: 300px;
+    height: 380px;
+  }
+  .front1,.back1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transition: transform .6s linear;
+  }
+  .front1 img{
+    height: 100%;
+  }
+  .front1{
+    transform: perspective(600px) rotateY(0deg);
+    
+  }
+  .back1{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .back1-content{
+    color: #2c3e50;
+    text-align: center !important;
+    width: 100%;
+    margin-top: 0px;
+
+  
+  }
+  .sm{
+    margin: 20px 0;
+    margin-left: 20px;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 110;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card1:hover > .front1{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card1:hover > .back1{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    margin-top: 550px;
+  }
+  .card11{
+    cursor: pointer;
+    width: 300px;
+    height: 380px;
+  }
+  .front11,.back11{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front11 img{
+    height: 100%;
+  }
+  .front11{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .back11{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .back11-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+    margin-left: 75px;
+    margin-top: 0px;
+  }
+  .sm{
+    margin: 20px 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 110px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card11:hover > .front11{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card11:hover > .back11{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .third{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    margin-top: 550px;
+  }
+  .card3{
+    cursor: pointer;
+    width: 300px;
+    height: 380px;
+  }
+  .front3,.back3{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front3 img{
+    height: 100%;
+  }
+  .front3{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .back3{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+  }
+  .back3-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+    margin-left: -100px;
+    margin-top: 0px;
+  }
+  .sm{
+    margin: 20px 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 110px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 50%
+  }
+  /* .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  } */
+  .card3:hover > .front3{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card3:hover > .back3{
+    transform: perspective(600px) rotateY(0deg);
+  }
+  
