@@ -14,6 +14,7 @@ import contactus from './pages/contactus';
 import Ress from './pages/Res';
 
 import Admin from "./pages/Admin"
+import Manu from './pages/Manu';
 
 import loginasrestuarant from './pages/loginasres';
 
@@ -27,6 +28,7 @@ function App() {
    
       <Route path="/" exact component={index} />
       <Route path="/restuarants" exact component={Ress} />
+      <Route path="/manu" exact component={Manu} />
       <Route path="/login" exact component={signin} />
       <Route path="/registerrestuarant" exact component={Registerrest} />
       <Route path="/aboutus" exact component={Aboutus} />

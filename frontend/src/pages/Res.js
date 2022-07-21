@@ -2,8 +2,10 @@ import React from 'react'
 import Navbar from '../components/navbar'
 import { Checkbox } from 'antd';
 import "../css/Ress.css"
+import { Link , useHistory  } from 'react-router-dom';
 
 function Ress() {
+    const history = useHistory();
     return (
         <div>
 
@@ -50,47 +52,47 @@ function Ress() {
                 <div style={({ display: 'flex', height: 'auto', flexDirection: 'column', width: '75%', marginLeft: "20px" })} >
                     <h1>9 Restaurants Found</h1>
                     <form className='searchbar'><input required="true" placeholder='search by your Area' className='searchinput' /><button className='searbtn'>Search</button> </form>
-                    
-                    
-                    <div  style={({width: '100%', backgroundColor: '#000', height: '80px', display: 'flex', gap: '10px', flexDirection: "column", marginTop: "30px" })}>
-kpujpo
+
+
+                    <div style={({ width: '100%', backgroundColor: '#000', height: '80px', display: 'flex', gap: '10px', flexDirection: "column", marginTop: "30px" })}>
+                        kpujpo
                     </div>
 
 
 
-                    <div style={({ width: '100%', gridTemplateColumns: "auto auto auto", height: 'auto', display: 'inline-grid',justifyContent:'center', gap: '30px', marginTop: "30px" })}>
+                    <div style={({ width: '100%', gridTemplateColumns: "auto auto auto", height: 'auto', display: 'inline-grid', justifyContent: 'center', gap: '30px', marginTop: "30px" })}>
 
-                      
-                      
-                      
-                      
-                        <div style={({ width: '280px', backgroundColor: '#000', height: '300px', display: 'flex', gap: '50px', flexDirection: "column", marginTop: "30px" })}>
+
+
+
+
+                        <div onClick={() => history.push("/manu")} style={({  cursor: 'pointer', width: '280px', backgroundColor: '#000', height: '300px', display: 'flex', gap: '50px', flexDirection: "column", marginTop: "30px" })}>
 
                         </div>
 
-                        
+
                         <div style={({ width: '280px', backgroundColor: '#000', height: '300px', display: 'flex', gap: '10px', flexDirection: "column", marginTop: "30px" })}>
 
                         </div>
 
-                        
+
                         <div style={({ width: '280px', backgroundColor: '#000', height: '300px', display: 'flex', gap: '10px', flexDirection: "column", marginTop: "30px" })}>
 
                         </div>
 
-                        
-                        <div style={({ width: '280px', backgroundColor: '#000', height: '300px', display: 'flex', gap: '10px', flexDirection: "column", marginTop: "30px" })}>
 
-                        </div>
-                        
                         <div style={({ width: '280px', backgroundColor: '#000', height: '300px', display: 'flex', gap: '10px', flexDirection: "column", marginTop: "30px" })}>
 
                         </div>
 
-                   
+                        <div style={({ width: '280px', backgroundColor: '#000', height: '300px', display: 'flex', gap: '10px', flexDirection: "column", marginTop: "30px" })}>
+
+                        </div>
 
 
-                        
+
+
+
 
                     </div>
 
