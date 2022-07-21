@@ -66,10 +66,10 @@ function Index() {
         <div className='items' onClick={() => history.push("/restuarants")}><h2>Pizza</h2> <img src={d} alt='aa' width="200px" height="160px" /></div>
         <div className='items' onClick={() => history.push("/restuarants")}><h2>Fast Food</h2> <img src={e} alt='aa' width="200px" height="160px" /></div>
 
-
  */}
 
-<div class="card1 first">
+
+        <div class="card1 first">
           <div class="front1">
             <img src="https://c0.wallpaperflare.com/preview/622/696/882/beef-bread-buns-burger.jpg" width={400} />
             {/* <img src="img.jpg" alt=""> */}
@@ -91,43 +91,43 @@ function Index() {
       </div>
 
       <div class="card11 middle">
-                    <div class="front11">
-                        <img src="https://c1.wallpaperflare.com/preview/32/389/309/food-picnic-shish-kebab-meat.jpg"width={400}   />
+        <div class="front11">
+          <img src="https://c1.wallpaperflare.com/preview/32/389/309/food-picnic-shish-kebab-meat.jpg" width={400} />
 
-                    </div>
-                    <div class="back11">
-                        <div class="back11-content middle">
-                            <h2>Bar BQ items</h2>
-                            <span>Youtube Channel</span>
-                            <div class="sm">
-                                <div className="uploaded">
-                                <Link to="/Stretching">
-                                        <button>View</button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="back11">
+          <div class="back11-content middle">
+            <h2>Bar BQ items</h2>
+            <span>Youtube Channel</span>
+            <div class="sm">
+              <div className="uploaded">
+                <Link to="/Stretching">
+                  <button>View</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="card3 third">
-                    <div class="front3">
-                        <img src="https://c0.wallpaperflare.com/preview/522/409/283/fish-sea-bream-eat-food.jpg" width={400} />
-                    </div>
-                    <div class="back3">
-                        <div class="back3-content third">
-                            <h2>Sea foods</h2>
-                            <span>Youtube Channel</span>
-                            <div class="sm">
-                                <div className="uploaded">
-                                    <Link to="/Stretching">
-                                        <button>View</button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="card3 third">
+        <div class="front3">
+          <img src="https://c0.wallpaperflare.com/preview/522/409/283/fish-sea-bream-eat-food.jpg" width={400} />
+        </div>
+        <div class="back3">
+          <div class="back3-content third">
+            <h2>Sea foods</h2>
+            <span>Youtube Channel</span>
+            <div class="sm">
+              <div className="uploaded">
+                <Link to="/Stretching">
+                  <button>View</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
       <div className='POPULARCUISINES'>
@@ -142,7 +142,24 @@ function Index() {
 
       </div>
 
-    </div> <hr></hr>
+    </div> 
+    <div className='app'>
+    
+    <div className='POPULARCUISINES'>
+
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Salads</h2> <img img src={f} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Dessert</h2> <img img src={g} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>BBQ</h2> <img img src={h} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Pakistani</h2> <img img src={i} alt='aa' width="200px" height="160px" /></div>
+        <div className='items' onClick={() => history.push("/restuarants")}><h2>Italian</h2> <img img src={j} alt='aa' width="200px" height="160px" /></div>
+
+
+
+      </div>
+    
+    </div>
+    
+    <hr></hr>
 
     <div className='app'>
       <h1>Schedule Your Order</h1>
