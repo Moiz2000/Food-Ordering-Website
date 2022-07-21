@@ -30,11 +30,21 @@ function Index() {
       <h1>ClockiFood</h1>
 
       <div className='search'>
+<div className='bg-food-img'>
+<form className='searchbar'><input required="true" placeholder='search by your Area' className='searchinput' 
 
+/> 
+<button className='searbtn'>
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="orange" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
 
-      <img src={image1} style={({border: "none" ,animation: "rotate 60s linear 0s infinite normal"})} width="300px" height="300px" alt='img'/>
+</button></form>
+</div>
+
+      {/* <img src={image1} style={({border: "none" ,animation: "rotate 60s linear 0s infinite normal"})} width="300px" height="300px" alt='img'/>
      <form className='searchbar'><input required="true" placeholder='search by your Area' className='searchinput' /><button className='searbtn'>Search</button> </form>
-     <img src={image2} width="300px" height="300px" alt='img'/>
+     <img src={image2} width="300px" height="300px" alt='img'/> */}
 
 
       </div>
@@ -44,6 +54,7 @@ function Index() {
     </div><hr></hr>
 
     <div className='app'>
+   
 
       <h2>POPULAR CUISINES</h2>
 
@@ -82,9 +93,9 @@ function Index() {
     <div className='app'>
     <div className='app2'>
      
-      <img src={image3} width="300px" height="300px" alt='img'/>
-      <hr style={({ width: '0px', height:"100%", marginLeft:"100px", marginRight:'100px'})}/>
-     <div><h3>Order Online</h3>
+      <img src={image3} width="400px" height="300px" alt='img'/>
+      {/* <hr style={({ width: '0px', height:"100%", marginLeft:"100px", marginRight:'100px'})}/> */}
+     <div style={({ width: '300px', height:"10%", marginLeft:"100px", marginRight:'100px'})}><h3>Order Online</h3>
       <p>from hundreds of restaurant in your city</p></div> 
     </div>
 </div>

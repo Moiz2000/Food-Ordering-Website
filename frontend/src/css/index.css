@@ -14,36 +14,52 @@
 }
 
 .search{
-    /* background-color: blue; */
+    background-color: blue;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 
 }
 
 .searchbar{
-    /* background-color: yellowgreen; */
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+  /* background-color: blueviolet; */
+    width: 30%;
+    margin-left: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 210px;
+    
+
 }
 
 .searchinput{
-    width: 79%;
-    height: 40px;
-    box-shadow: 0 0 1px 1px;
+    width: 350px;
+    height: 41px;
+   border: none;
+padding-left: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+/* background-color: rgba(153, 151, 148, 0.386); */
 }
 
 .searbtn{
-    height: 46px;
+    height: 41px;
     width: 105px;
-    box-shadow: 0 0 1px 1px;
+    border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+    /* box-shadow: 0 0 1px 1px; */
+    border: none;
+    background-color: rgba(34, 34, 31, 0.762);
 }
-
+.app{
+    background-color: brown;
+    background-image: url("https://t3.ftcdn.net/jpg/05/02/10/70/360_F_502107061_JKj0HIYeI2Ag3xNjKCbE2KobpfIURlcX.jpg");
+    background-size: cover;
+}
 .POPULARCUISINES{
     /* background-color: aquamarine; */
     width: 90%;
@@ -51,6 +67,7 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    font-weight: bold;
 
 }
 
@@ -64,11 +81,13 @@
     flex-direction: column;
     cursor: pointer;
 }
-
+.items h2{
+    color: orangered;
+}
 
 .app2{
     width: 65%;
-    /* background-color: aqua; */
+    background-color:rgb(255, 94, 0);
     height: 300px;
     margin-top: 50px;
     display: flex;
@@ -78,4 +97,38 @@
     margin-bottom: 50px;
     margin-right: 10px;
     
+}
+.bg-food-img{
+    width: 100%;
+    height: 500px;
+    background-color: antiquewhite;
+    margin-top: -100px;
+    box-shadow: rgba(228, 82, 3, 0.797) 0px 3px 8px;
+    animation: ChangeImages-A 20s linear infinite;
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+@keyframes ChangeImages-A {
+    0%{
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/417/148/13/steak-meat-food-rib-eye-steak-wallpaper-preview.jpg");
+}
+25%{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/85/489/180/5bd34b0eaa7f1-wallpaper-preview.jpg");
+}
+50%{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/751/161/100/meat-vegetables-kebab-skewers-wallpaper-preview.jpg");
+}
+  75%{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/119/629/183/food-doughnut-bun-breakfast-wallpaper-preview.jpg");
+  }  
+  100%{
+    background-image: url(" https://c4.wallpaperflare.com/wallpaper/482/397/276/food-fruit-delicious-sweet-wallpaper-preview.jpg");
+  }
+}
+
+.app h3 {
+    color: aliceblue;
+}
+.app h1 {
+    color:orangered;
 }
